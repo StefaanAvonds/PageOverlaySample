@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:SamplePageBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PageOverlaySample.Pages;assembly=PageOverlaySample"
+             x:Class="PageOverlaySample.Pages.SamplePage"
+             Title="Sample">
+
+  <StackLayout Orientation="Vertical">
+    <StackLayout Orientation="Horizontal" Padding="25" HorizontalOptions="CenterAndExpand">
+      <Label Text="Text to show with Activity Indicator" TextColor="Black" />
+      <Entry Text="{Binding Information}" TextColor="Black" />
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+      <Button Text="Start ActivityIndicator" TextColor="Black" BackgroundColor="Gray" Clicked="btnStartActivityIndicator_Click" />
+      <Button Text="Stop ActivityIndicator" TextColor="Black" BackgroundColor="Gray" Clicked="btnStopActivityIndicator_Click" />
+    </StackLayout>
+  </StackLayout>
+  
+</local:SamplePageBase>
